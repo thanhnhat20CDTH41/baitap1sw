@@ -25,7 +25,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-left: 254px;
+  margin-left: 190px;
   color: #000000;
 }
 .header__navbar-item2 {
@@ -113,6 +113,7 @@
 .scrolldown {
   text-align: center;
   margin-top: 26px;
+  margin-left: 60px;
 }
 .scrolldown img {
   margin-bottom: 12px;
@@ -123,6 +124,7 @@
 .about-us img {
   width: 458px;
   margin-top: 85px;
+  margin-left: 60px;
 }
 .about-us p {
   margin-top: 72px;
@@ -148,6 +150,7 @@
   background: #283583;
   box-shadow: 0px 7px 20px rgba(144, 144, 144, 0.798432);
   border: none;
+  margin-left: 15px;
 }
 .team {
   width: 1142px;
@@ -330,12 +333,14 @@
 }
 .solutions {
   padding-bottom: 141px;
+  margin-top: 40px;
 }
 .solutions__option {
   justify-content: space-between;
   display: flex;
   width: 970px;
   margin-left: 115px;
+  margin-top: -45px;
 }
 .solutions img {
   width: 156px;
