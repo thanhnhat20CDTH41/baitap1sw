@@ -359,7 +359,6 @@
   margin-top: 44px;
   width: 1140px;
   display: flex;
-  margin-left: 15px;
 }
 .news__img {
   border: 1px solid #f2f2f2;
@@ -387,7 +386,7 @@
 .news-button {
   padding-bottom: 67px;
   text-align: center;
-  margin-left: 78px;
+  margin-left: 50px;
 }
 .news-button button {
   font-weight: 400;
