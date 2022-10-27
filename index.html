@@ -12,17 +12,20 @@
 <div class="container">
     <header class="header">
         <div class="header__navbar">
-            <ul class="header__navbar-list">
-                <li class="header__navbar-item1">Trang chủ</li>
-                <li class="header__navbar-item2">Chúng tôi</li>
-                <li class="header__navbar-item3">Dịch vụ</li>
+            <div class="header__navbar-list" id="myheader">
+                <a href="#home" class="active">Trang chủ</a>
+                <a href="#home" class="active">Chúng tôi</a>
+                <a href="#home" class="active">Dịch vụ</a>
                 <div class="sw__logo">
                     <img src="./image/sw_logo.png" alt="sw__logo-img">
                 </div>
-                <li class="header__navbar-item4">Đối tác</li>
-                <li class="header__navbar-item5">Tin tức</li>
-                <li class="header__navbar-item6">Liên hệ</li>
-            </ul>  
+                <a href="#home" class="active">Đối tác</a>
+                <a href="#home" class="active">Tin tức</a>
+                <a href="#home" class="active">Liên hệ</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>  
             <div class="header__navbar-button">
                 <button  class="header-button" >Nhận tư vấn ngay</button>
             </div>
@@ -81,28 +84,28 @@
         <p>Chúng tôi chuyên cung cấp giải pháp xây dựng trong phát triển phần mềm cho doanh nghiệp</p>
     </div>
     <div class="infographie">
-        <div class="info">
-            <div class="rectangle">
+        <div class="row">
+            <div class="col-3 menu">
                 <h2>01</h2>
                 <p>Tư Vấn </br> Phát Triển Phần Mềm</p>
             </div>
-            <div class="rectangle">
+            <div class="col-3 menu">
                 <h2>03</h2>
                 <p>Phát Triển Website</p>
             </div>
-            <div class="rectangle">
+            <div class="col-3 menu">
                 <h2>05</h2>
                 <p>Phát Triển APP MOBILE</p>
             </div>
         </div>
-        <div class="info float-right">
-            <div class="rectangle">
+        <div class="row row-bottom">
+            <div class="col-3 menu">
                 <h2>02</h2>
                 <p>Dịch Vụ Phần Mềm</p>
-            </div><div class="rectangle">
+            </div><div class="col-3 menu">
                 <h2>04</h2>
                 <p>Gia Công Phần mềm</p>
-            </div><div class="rectangle">
+            </div><div class="col-3 menu">
                 <h2>06</h2>
                 <p>Bảo Trì Phần Mềm</p>
             </div>
@@ -280,15 +283,17 @@
         </div>
     </div>
     <div class="upload">
-        <label for="email">File đính kèm</label>
+       <div class="upload-tittle">
+           <label for="">File đính kèm</label>
+       </div>
         <div class="upload-input"> 
             <p class="upload__text">Drag and drop a file  or </p>    
             <p class="upload-file">Search a file</p>
         </div>
     </div>
-    <div class="problem">
-        <span>Vấn đề của bạn</span>
+    <div class="problem">     
         <div class="problem-input">
+            <span>Vấn đề của bạn</span>
             <input type="text" name="">
         </div>
     </div>
@@ -340,5 +345,15 @@
         </div>
     </div>
 </footer>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myheader");
+      if (x.className === "header__navbar-list") {
+        x.className += " responsive";
+      } else {
+        x.className = "header__navbar-list";
+      }
+    }
+    </script>
 </body>
 </html>
