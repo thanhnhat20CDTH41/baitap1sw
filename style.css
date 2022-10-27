@@ -613,14 +613,12 @@ footer {
   }
   .header__navbar-list {
     justify-content: space-between;
-    margin: 4px 70px 0 0;
+    margin: 4px 55px 0 0;
     padding-left: 0;
-    display: grid;
+    display: flex;
     width: 376px;
   }
-  .header__navbar-item1 {
-    margin-left: 0;
-  }
+
   .advise {
     margin-left: 0;
     text-align: center;
